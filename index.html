@@ -1,37 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <link rel="stylesheet" href="style1.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <script src="script.js" defer
-    ></script>
-    <style>
-
-        .made-with-love {
-            position: fixed;
-            bottom: 10px; 
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            color: #777;
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Page d'accueil de Maître Valérie DE ANGELIS, Avocat à Bayonne." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valérie DE ANGELIS - Avocat à Bayonne</title>
+  <!-- Google Fonts (Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" 
+    rel="stylesheet" 
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <div>
-            <h1 class="header_text">Soit Ma Valentine <3</h1>
-        </div>
-        <br>
-        <div class="gif_container">
-            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHNrNTh0d2loaDRyZWpreGlreDduNnZlazZxOGpxZThsaW9zOWwzNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JtWCUxy3Bm4nz9HKvI/giphy.gif" alt="Cute animated illustration">
-        </div>
-        <div class="buttons">
-            <button class="btn" id="yesButton" onclick="nextPage()">OUI</button>
-            <button class="btn" id="noButton" onmouseover="moveButton()">NON</button>
 
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="header-logo">
+      <h1>Valérie DE ANGELIS</h1>
+      <p>Avocat à Bayonne</p>
+    </div>
+    <nav class="header-nav" id="navbar">
+      <ul>
+        <li><a href="#accueil" class="active">ACCUEIL</a></li>
+        <li><a href="#competences">COMPÉTENCES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#rdv-honoraires">RDV/HONORAIRES</a></li>
+        <li><a href="#correspondants">CORRESPONDANTS</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu" id="menu-toggle">&#9776;</div>
+  </header>
+
+  <!-- SECTION HERO (ACCUEIL) -->
+  <section class="hero fade-in-section" id="accueil">
+    <div class="hero-content">
+      <!-- Le texte glisse depuis la gauche (slide-in-left) -->
+      <div class="hero-text slide-in-left">
+        <h2 id="name">Maître Valérie DE ANGELIS</h2>
+        <a href="#contact" class="cta-btn">Nous Contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PRÉSENTATION -->
+  <section class="presentation fade-in-section">
+    <div class="presentation-text">
+      <h3>À propos de Maître De Angelis</h3>
+      <p>
+        Maître De Angelis intervient principalement en droit de la famille et de leur patrimoine, droit des biens et droit pénal.
+        Quelle que soit votre problématique, elle vous aide en amont dans la prise de décision 
+        et vous accompagne tout au long de la procédure devant le Tribunal Judiciaire ou la Cour d'Appel.
+      </p>
+      <p>
+        Elle assure votre défense devant tous les tribunaux du Sud-Ouest et accepte les postulations 
+        devant le Tribunal Judiciaire de Bayonne et la Cour d'Appel de Pau.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION COMPÉTENCES -->
+  <section class="competences fade-in-section" id="competences">
+    <h2 id="h2original">COMPÉTENCES & DOMAINES D'INTERVENTION</h2>
+    <div class="competences-grid">
+      <article class="competence-card flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h4>Droit de la famille</h4>
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Séparation, divorce, garde des enfants, pension alimentaire, prestation compensatoire.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="competence-card flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h4>Droit des successions</h4>
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Gestion et défense de vos intérêts lors de litiges successoraux.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="competence-card flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h4>Litiges divers</h4>
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Litiges bancaires, télécoms, internet, vices cachés ventes immobilières.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="competence-card flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h4>Droit pénal</h4>
+          </div>
+          <div class="flip-card-back">
+            <p>
+              Auteurs ou victimes, défense de vos droits devant toutes les juridictions pénales.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="infos-supp">> En savoir plus sur ses compétences et ses domaines précis d'intervention</p>
+  </section>
+
+  <!-- SECTION TÉMOIGNAGES (OPTIONNELLE) -->
+  <section class="testimonials fade-in-section">
+    <h2>Nos clients parlent de nous</h2>
+    <div class="testimonial-slider" id="testimonial-slider">
+      <div class="testimonial-slide">
+        <blockquote>
+          <p>« Excellente avocate ! Elle a su m’accompagner dans un dossier difficile. Grand professionnalisme et écoute. »</p>
+          <footer>— M. Dupont</footer>
+        </blockquote>
+      </div>
+      <div class="testimonial-slide">
+        <blockquote>
+          <p>« Maître De Angelis m’a permis de résoudre un litige bancaire rapidement. Merci encore ! »</p>
+          <footer>— Mme Bernier</footer>
+        </blockquote>
+      </div>
+      <div class="testimonial-slide">
+        <blockquote>
+          <p>« Humainement très disponible et d’excellent conseil. Je recommande vivement. »</p>
+          <footer>— Anonyme</footer>
+        </blockquote>
+      </div>
+    </div>
+    <div class="testimonial-controls">
+      <button id="prevBtn">&#10094;</button>
+      <button id="nextBtn">&#10095;</button>
+    </div>
+    <p class="avis-link">
+      <a href="#">> LIRE TOUS LES AVIS</a>
+    </p>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section class="contact-section fade-in-section" id="contact">
+    <h2>CONTACT</h2>
+    <div class="contact-flex">
+      <div class="contact-info">
+        <p>
+          <strong>Adresse :</strong><br />
+          24 rue Lormand - Bayonne
+        </p>
+        <p>
+          <strong>Téléphone :</strong> 07 64 00 64 64<br />
+          <strong>Mail :</strong> 
+          <a href="mailto:cabinet@deangelis-avocat.com">cabinet@deangelis-avocat.com</a>
+        </p>
+        <div class="social-links">
+          <a href="#" target="_blank">LinkedIn</a> |
+          <a href="#" target="_blank">Facebook</a> |
+          <a href="#" target="_blank">Instagram</a>
+        </div>
+      </div>
+      <div class="contact-form-area">
+        <h3>Écrivez-nous</h3>
+        <form id="contact-form">
+          <label for="contact-nom">Nom :</label>
+          <input type="text" id="contact-nom" name="contact-nom" required />
+
+          <label for="contact-email">Email :</label>
+          <input type="email" id="contact-email" name="contact-email" required />
+
+          <label for="contact-message">Votre message :</label>
+          <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION RDV & HONORAIRES -->
+  <section class="rdv-section fade-in-section" id="rdv-honoraires">
+    <h2>RDV EN LIGNE & HONORAIRES</h2>
+    <p>
+      Maître Valérie DE ANGELIS vous propose un service de rendez-vous en ligne et des honoraires
+      adaptés en fonction de votre dossier. N’hésitez pas à consulter les modalités ou à contacter
+      le cabinet pour plus d’informations.
+    </p>
+  </section>
+
+  <!-- SECTION AVOCATS CORRESPONDANTS -->
+  <section class="correspondants-section fade-in-section" id="correspondants">
+    <h2>AVOCATS CORRESPONDANTS</h2>
+    <p>
+      Le cabinet a conclu une convention organique avec nos avocats correspondants : 
+      <strong>Maître Bayle, Maître Joly, Maître Escande (Bordeaux), 
+      Maître Catherine Laforêt (Dax) et Maître Katy Mira (Mont de Marsan).</strong>
+    </p>
+    <p>> Plus d'infos sur les cabinets correspondants sur Bordeaux, Dax et Mont de Marsan</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Valérie DE ANGELIS - Avocat à Bayonne | 
+       <a href="#" class="footer-link">Mentions légales</a>
+    </p>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookie-banner">
+    <p>
+      Nous utilisons des cookies et des technologies similaires pour activer des services et des fonctionnalités
+      sur notre site et pour comprendre votre interaction avec notre service.
+      En cliquant sur <strong>Accepter</strong>, vous acceptez l'utilisation de ces technologies 
+      à des fins de marketing et d'analyse. 
+      <a href="#" class="footer-link">Voir la politique de confidentialité</a>
+    </p>
+    <button id="cookie-accept-btn">Accepter</button>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
 </body>
 </html>
